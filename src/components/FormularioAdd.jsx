@@ -144,7 +144,7 @@ const FormularioAdd = ({ dispatch }) => {
                     placeholder="Ingrese link de imagen"
                     required="required"
                   />
-                 <h6> {alertImagen}</h6>
+                 <h6 className="text-danger"> {alertImagen}</h6>
                 </div>
               </div>
             </div>
@@ -162,7 +162,7 @@ const FormularioAdd = ({ dispatch }) => {
           />
         </label>
 
-        <h6> {alertNombre}</h6>
+        <h6 className="text-danger"> {alertNombre}</h6>
 
         <label className="mx-1 d-grid gap-2">
           Telefono:{" "}
@@ -176,7 +176,7 @@ const FormularioAdd = ({ dispatch }) => {
           />
         </label>
 
-        <h6> {alertTelefono}</h6>
+        <h6 className="text-danger"> {alertTelefono}</h6>
 
         <div className="row">
           <div className="col-6">
@@ -191,7 +191,7 @@ const FormularioAdd = ({ dispatch }) => {
                 placeholder="Fecha de nacimiento"
               />
             </label>
-            <h6> {alertFechaNac}</h6>
+            <h6 className="text-danger"> {alertFechaNac}</h6>
           </div>
           <div className="col-6">
             <label className="mx-1 d-grid gap-2">
@@ -210,7 +210,7 @@ const FormularioAdd = ({ dispatch }) => {
               </select>
             </label>
 
-            <h6> {alertSexo}</h6>
+            <h6 className="text-danger"> {alertSexo}</h6>
           </div>
         </div>
 

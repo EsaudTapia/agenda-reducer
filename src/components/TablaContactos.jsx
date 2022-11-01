@@ -23,6 +23,7 @@ const TablaContactos = ({contactos=[],dispatch}) => {
                 <th>Imagen</th>
                 <th>Nombre</th>            
                 <th>Teléfono</th>
+                <th>Nacimiento</th>
                 <th>Edad</th>
                 <th>Sexo</th>
                 <th>Acciones</th>
@@ -40,6 +41,7 @@ const TablaContactos = ({contactos=[],dispatch}) => {
                             <td><img src={contacto.imagen} alt={contacto.nombre} className="img-fluid" width="50px"/></td>
                             <td>{contacto.nombre}</td>
                             <td>{contacto.telefono}</td>
+                            <td>{contacto.fechaNacimiento}</td>
                             <td>{edad}</td>
                             <td>{contacto.sexo === "M" ? "Masculino" : "Femenino"}</td>
                             <td>
